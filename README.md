@@ -1,28 +1,38 @@
-I am excited to share details about my inaugural development project, a simple Quiz app designed to streamline the quiz-conducting process. The application serves as an interface for both the client, who inputs questions and correct answers, and the candidates, who interact with the quiz and receive scores upon completion.
+# Quiz App - My First Development Project
 
-Here's a brief overview of the workflow:
+Welcome to my first development project! This Quiz app simplifies the process of conducting quizzes by providing a user-friendly interface for both the quiz creator and the candidates. The app displays scores upon completion and features an intuitive workflow.
 
-Client Input:
-The client enters questions, options, and correct answers into an Excel file.
+## Workflow
 
-Data Transformation:
-A Python script (pilot.py) is employed to convert the Excel-based questions, options, and answers into a JSON format.
+1. **Client Input:**
+   - The client enters questions, options, and correct answers into an Excel file.
 
-JSON Processing:
-The resulting JSON file (question.json) is then utilized by a JavaScript file (quiz_app.js).
+2. **Data Transformation:**
+   - A Python script (`pilot.py`) converts the Excel-based questions, options, and answers into a JSON format.
 
-Data Retrieval:
-The JavaScript file (quiz_app.js) fetches the questions, options, and answers from the JSON file, storing them into an object variable.
+3. **JSON Processing:**
+   - The resulting JSON file (`question.json`) is utilized by a JavaScript file (`quiz_app.js`).
 
-User Interface:
-A function is created to display questions, options, and answers in the browser, providing an interactive experience for candidates.
+4. **Data Retrieval:**
+   - The JavaScript file fetches the questions, options, and answers from the JSON file, storing them into an object variable.
 
-Scoring System:
-The application calculates the final score of the candidate. If the result is less than 40%, the score is displayed in red; otherwise, it is displayed in green.
+5. **User Interface:**
+   - A function is created to display questions, options, and answers in the browser, providing an interactive experience for candidates.
 
-Thanks!!!
+6. **Scoring System:**
+   - The application calculates the final score of the candidate. If the result is less than 40%, the score is displayed in red; otherwise, it is displayed in green.
 
+##Prerequisite for local deployment
 
+1. Install VS code and respective extensions for Javascripts,HTML and CSS. You also need to install live server to host website locally 
+2. You need to install Python library like pandas and openpyxl.
 
+## Getting Started
 
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/quiz-app.git
 
+2. Run the Python script to transform Excel data. Change the excel file name if needed.
+
+3. Open the HTML file in a browser to start the quiz. 
