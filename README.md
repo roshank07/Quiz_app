@@ -1,17 +1,26 @@
-# Projects
+I am excited to share details about my inaugural development project, a simple Quiz app designed to streamline the quiz-conducting process. The application serves as an interface for both the client, who inputs questions and correct answers, and the candidates, who interact with the quiz and receive scores upon completion.
 
-Hi, This is my first Development project. It is a simple Quiz app which takes questions,options/correct answers from a client(one who wants to conduct the quiz) and provides a web interface for the candidate. It displays the score after submitting the quiz. 
+Here's a brief overview of the workflow:
 
+Client Input:
+The client enters questions, options, and correct answers into an Excel file.
 
-Workflow:
+Data Transformation:
+A Python script (pilot.py) is employed to convert the Excel-based questions, options, and answers into a JSON format.
 
-1.Client enters his/her questions along with the options and its correct answer in an excel file.
-2.We will feed this excel file to pilot.py script. It will basically convert questions/options/answer(which is in excel) into JSON format.
-3.question.json file which we obtained from previous step is fed to javascript file(quiz_app.js)
-4.quiz_app file will fetch the question/options/answers and store it into an object variable.
-5.Finally, we will create  functionto display questions/options/answer in the browser and also calculate the final score of the candidate.
-6.If the Candidate result is less than 40%, score will be displayed in red or else in green.
+JSON Processing:
+The resulting JSON file (question.json) is then utilized by a JavaScript file (quiz_app.js).
 
+Data Retrieval:
+The JavaScript file (quiz_app.js) fetches the questions, options, and answers from the JSON file, storing them into an object variable.
+
+User Interface:
+A function is created to display questions, options, and answers in the browser, providing an interactive experience for candidates.
+
+Scoring System:
+The application calculates the final score of the candidate. If the result is less than 40%, the score is displayed in red; otherwise, it is displayed in green.
+
+Thanks!!!
 
 
 
